@@ -53,6 +53,38 @@
   font-size: 20px;
 }
 
+.contact {
+  display: block;
+  background-color: white;
+  height: 40vh;
+  color: black;
+  text-align: start;
+  max-width: 300px;
+  margin: 30px 0;
+}
+.contact .contact_info {
+  height: 20vh;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+.contact .contact_button {
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  outline: solid lightgray;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 40px 40px;
+}
+.contact .contact_button:hover {
+  background-color: #cccccc;
+}
+
 * {
   margin: 0;
   padding: 0;
