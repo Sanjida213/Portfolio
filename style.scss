@@ -1,6 +1,7 @@
 @use "./variable" as *;
 @use "./profile";
 @use "./portfolio";
+@use "./contact";
 
 
 * {
@@ -68,6 +69,7 @@ footer {
     height: 42px;
   }
 }
+
 
 
 // @media screen and (min-width: 768px) {
