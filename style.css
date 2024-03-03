@@ -64,6 +64,9 @@
   .portfolio .project_boxes .portfolio-project {
     width: 335px;
   }
+  .portfolio .project_boxes .portfolio-project .project_grid {
+    height: 5vh;
+  }
   .portfolio .project_boxes .hidden_portfolio {
     display: block;
   }
@@ -276,5 +279,10 @@ article {
     max-width: 50%;
     height: unset;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 60px;
   }
 }/*# sourceMappingURL=style.css.map */

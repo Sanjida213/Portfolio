@@ -54,6 +54,10 @@
 
       .portfolio-project {
         width: 335px;
+
+        .project_grid {
+          height: 5vh;
+        }
       }
 
       .hidden_portfolio {
@@ -74,6 +78,7 @@
       .portfolio-project {
         width: 300px;
       }
+      
     }
   }
 }
