@@ -1,0 +1,67 @@
+@use "./variable" as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .name {
+    color: $secondary-color;
+    background-color: $primary-color;
+    text-align: center;
+    min-height: 20px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      text-align: unset;
+      min-height: unset;
+    }
+
+    .navigation {
+      display: unset;
+      padding-bottom: 50px;
+    }
+  }
+
+  nav {
+    display: inline;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    color: black;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+    &:hover {
+      color: lighten(blue, 10%);
+    }
+  }
+
+}

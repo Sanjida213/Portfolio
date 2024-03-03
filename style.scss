@@ -4,6 +4,7 @@
 @use "./contact";
 @use "./skills";
 @use "./footer";
+@use "./header";
 
 * {
   margin: 0;
@@ -19,25 +20,6 @@ body {
   // max-width: 320px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .name {
-    color: $secondary-color;
-    background-color: $primary-color;
-    text-align: center;
-    min-height: 20px;
-    padding-bottom: 40px;
-    font-size: 20px;
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  .navigation {
-    display: none;
-  }
-}
 
 .job-title {
   height: 25vh;
@@ -58,68 +40,12 @@ article {
     padding: 40px 40px;
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .name {
-      text-align: unset;
-      min-height: unset;
-    }
-
-    .navigation {
-      display: unset;
-      padding-bottom: 50px;
-    }
-  }
-
-  nav {
-    display: inline;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    justify-content: space-evenly;
-    color: black;
-  }
-
-  nav ul li {
-    display: inline-flex;
-    list-style: none;
-    margin-right: 10px;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-
-    &:hover {
-      color: lighten(blue, 10%);
-    }
-  }
-
-  // .profile {
-  //   // display: grid;
-  //   // max-width: unset;
-  //   // height: unset;
-  //   // grid-template-columns: 2fr 1fr;
-  //   // grid-template-rows: 1fr;
-
-  //     // .profile_info {
-
-  //     // }
-
+  
+  
   //     // try use grid area for above or you can add an image to html and hide it on mobile screeen
   //     // and then put h3 and info into a div container
 
-  //     // .profile_image {
-  //     //   max-height: 100%;
-  //     //   max-width: 100%;
-  //     // }
-
-  // }
+  
 
   .job-title {
     height: unset;
