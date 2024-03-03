@@ -3,6 +3,7 @@
 @use "./portfolio";
 @use "./contact";
 @use "./skills";
+@use "./footer"
 
 * {
   margin: 0;
@@ -58,20 +59,7 @@ article {
 }
 
 
-footer {
-  height: 5vh;
-  background-color: black;
-  color: white;
-  text-align: center;
-  min-height: 10vh;
 
-  .icon_github, .icon_linkedin, .icon_cv {
-    display: inline-block;
-    margin: 15px 0;
-    width: 42px;
-    height: 42px;
-  }
-}
 
 
 @media screen and (min-width: 768px) {
