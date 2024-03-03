@@ -28,10 +28,29 @@
     color: $secondary-color;
     padding: 20px;
     margin: 40px 40px;
-    
 
     &:hover {
       background-color: darken($primary-color, 20%);
+    }
+  }
+}
+
+// fix the media query for this
+@media screen and (min-width: 768px) {
+  .contact {
+    max-width: unset;
+    justify-content: center;
+    height: unset;
+
+    .contact_info {
+      height: unset;
+      font-size: unset;
+      font-size: 90px;
+      text-align: center;
+    }
+
+    .contact_button {
+      width: 55%; // fix this
     }
   }
 }

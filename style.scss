@@ -62,20 +62,5 @@ article {
     padding-bottom: 60px;
   }
 
-  .contact {
-    max-width: unset;
-    justify-content: center;
-    height: unset;
-
-    .contact_info {
-      height: unset;
-      font-size: unset;
-      font-size: 90px;
-      text-align: center;
-    }
-
-    .contact_button {
-      width: 85%; // fix this
-    }
-  }
+  
 }

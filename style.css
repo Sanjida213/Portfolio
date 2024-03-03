@@ -124,6 +124,22 @@
   background-color: #cccccc;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    max-width: unset;
+    justify-content: center;
+    height: unset;
+  }
+  .contact .contact_info {
+    height: unset;
+    font-size: unset;
+    font-size: 90px;
+    text-align: center;
+  }
+  .contact .contact_button {
+    width: 55%;
+  }
+}
 .skills {
   display: none;
 }
@@ -264,19 +280,5 @@ article {
     max-width: 50%;
     height: unset;
     padding-bottom: 60px;
-  }
-  .contact {
-    max-width: unset;
-    justify-content: center;
-    height: unset;
-  }
-  .contact .contact_info {
-    height: unset;
-    font-size: unset;
-    font-size: 90px;
-    text-align: center;
-  }
-  .contact .contact_button {
-    width: 85%;
   }
 }/*# sourceMappingURL=style.css.map */
