@@ -1,58 +1,97 @@
 .profile {
-  height: 100vh;
   background-color: white;
   color: black;
-  text-align: start;
   font-size: 20px;
-  max-width: 300px;
   margin: 30px 0;
 }
-.profile .profile_about {
-  display: block;
-  height: 10vh;
-  font-size: 30px;
-}
 .profile .profile_image {
-  display: block;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
 }
 .profile .profile_info {
   margin: 30px 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .profile {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+  }
+  .profile .profile_image {
+    width: 450px;
+    height: 300px;
+  }
+}
 .portfolio {
-  display: block;
   background-color: white;
   color: black;
   text-align: start;
-  max-width: 300px;
 }
 .portfolio .portfolio_title {
-  height: 5vh;
   font-size: 30px;
   margin: 30px 0;
 }
-
-.portfolio-project .portfolio_box {
+.portfolio .project_boxes .hidden_portfolio {
+  display: none;
+}
+.portfolio .project_boxes .portfolio-project .portfolio_box {
   padding: 20px;
-  width: 100%;
-  height: 25vh;
+  height: 250px;
   background-color: black;
 }
-.portfolio-project .project_grid {
+.portfolio .project_boxes .portfolio-project .project_grid {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
   height: 10vh;
 }
-.portfolio-project .project_grid .project-number {
+.portfolio .project_boxes .portfolio-project .project_grid .project-number {
   font-size: 30px;
 }
-.portfolio-project .project_grid .icon_grid {
+.portfolio .project_boxes .portfolio-project .project_grid .icon_grid {
   display: flex-end;
   font-size: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio .project_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .portfolio .project_boxes .portfolio-project {
+    width: 350px;
+  }
+  .portfolio .project_boxes .hidden_portfolio {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .portfolio {
+    padding: 20px;
+  }
+  .portfolio .project_boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr;
+    gap: 14px;
+  }
+  .portfolio .project_boxes .portfolio-project {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio .project_boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 14px;
+  }
+  .portfolio .project_boxes .portfolio-project {
+    width: 420px;
+  }
+}
 .contact {
   display: block;
   background-color: white;
@@ -85,6 +124,35 @@
   background-color: #cccccc;
 }
 
+.skills {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .skills {
+    display: unset;
+    padding: 40px 0;
+  }
+  .skills .skills_icon {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .skills .skills_icon .icon {
+    width: 55px;
+    height: 55px;
+  }
+  .skills .skills_block {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 60px 0;
+  }
+  .skills .skills_title {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -117,10 +185,6 @@ header .navigation {
   display: none;
 }
 
-.skills {
-  display: none;
-}
-
 .job-title {
   height: 25vh;
   color: black;
@@ -132,10 +196,6 @@ article {
   height: 25vh;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.hidden_portfolios {
-  display: none;
 }
 
 footer {
@@ -192,17 +252,6 @@ footer .icon_github, footer .icon_linkedin, footer .icon_cv {
   nav ul li a:hover {
     color: #3333ff;
   }
-  .profile {
-    display: grid;
-    max-width: unset;
-    height: unset;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  .profile .profile_image {
-    max-height: 100%;
-    max-width: 100%;
-  }
   .job-title {
     height: unset;
     text-align: center;
@@ -214,40 +263,6 @@ footer .icon_github, footer .icon_linkedin, footer .icon_cv {
     max-width: 50%;
     height: unset;
     padding-bottom: 60px;
-  }
-  .skills {
-    display: unset;
-    padding: 40px 0;
-  }
-  .skills .skills_icon {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    padding-bottom: 60px;
-    gap: 20px;
-  }
-  .skills .skills_block {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding: 60px 0;
-  }
-  .skills .skills_title {
-    font-size: 30px;
-    padding: 20px 0;
-  }
-  .hidden_portfolios {
-    display: unset;
-    max-width: 100%;
-  }
-  .portfolio {
-    max-width: unset;
-  }
-  .project_boxes {
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
   }
   .contact {
     max-width: unset;
