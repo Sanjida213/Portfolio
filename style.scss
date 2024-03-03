@@ -3,7 +3,7 @@
 @use "./portfolio";
 @use "./contact";
 @use "./skills";
-@use "./footer"
+@use "./footer";
 
 * {
   margin: 0;
@@ -11,13 +11,12 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: Outfit;
   font-size: 1.5rem;
   background-color: $primary-color;
-  padding: 20px;
-  max-width: 320px;
+  // padding: 20px;
+  // max-width: 320px;
 }
 
 header {
@@ -32,24 +31,19 @@ header {
     min-height: 20px;
     padding-bottom: 40px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
   }
- 
-  
+
   .navigation {
     display: none;
   }
-
 }
 
-
- 
 .job-title {
   height: 25vh;
   color: $secondary-color;
   font-size: 45px;
 }
-
 
 article {
   background-color: $primary-color;
@@ -58,109 +52,89 @@ article {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
 @media screen and (min-width: 768px) {
-
-  
   body {
     max-width: unset;
     padding: 40px 40px;
   }
 
-  
   header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .name {
       text-align: unset;
       min-height: unset;
     }
 
-    .navigation{
+    .navigation {
       display: unset;
       padding-bottom: 50px;
     }
   }
-  
-    nav {
-      display: inline;
-      width: 84%;
-      margin: auto;
-      padding: 20px 0;
-      justify-content: space-evenly;
-      color: black;
-    }
-    
-    nav ul li {
-      display: inline-flex;
-      list-style: none;
-      margin-right: 10px;
-    }
-    
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      font-size: 20px;
-    
-      &:hover {
-        color: lighten(blue, 10%);
-      }
-    }
 
+  nav {
+    display: inline;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    color: black;
+  }
 
-  // .profile { 
+  nav ul li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+    &:hover {
+      color: lighten(blue, 10%);
+    }
+  }
+
+  // .profile {
   //   // display: grid;
   //   // max-width: unset;
   //   // height: unset;
   //   // grid-template-columns: 2fr 1fr;
   //   // grid-template-rows: 1fr;
 
-    
   //     // .profile_info {
-        
 
   //     // }
 
   //     // try use grid area for above or you can add an image to html and hide it on mobile screeen
   //     // and then put h3 and info into a div container
 
-
   //     // .profile_image {
   //     //   max-height: 100%;
   //     //   max-width: 100%;
   //     // }
 
-      
   // }
 
+  .job-title {
+    height: unset;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 60px;
+    font-size: 50px;
+    // font-family: Cor;
+  }
 
-.job-title {
-  height: unset;
-  text-align: center;
-  padding: 40px;
-  padding-bottom: 60px;
-  font-size: 50px;
-  // font-family: Cor;
-}
-
-article {
-  max-width: 50%;
-  height: unset;
-  padding-bottom: 60px;
-}
-
-
-
-
-
-
-
+  article {
+    max-width: 50%;
+    height: unset;
+    padding-bottom: 60px;
+  }
 
   .contact {
     max-width: unset;
@@ -178,7 +152,4 @@ article {
       width: 85%; // fix this
     }
   }
-
-
-
 }

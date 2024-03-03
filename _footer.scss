@@ -1,16 +1,19 @@
 @use "./variable" as *;
 
 footer {
-  height: 5vh;
+  //   height: 5vh;
   background-color: black;
   color: white;
   text-align: center;
-  min-height: 10vh;
 
-  .icon_github, .icon_linkedin, .icon_cv {
+  .icon_github,
+  .icon_linkedin,
+  .icon_cv {
     display: inline-block;
     margin: 15px 0;
     width: 42px;
     height: 42px;
   }
 }
+
+// footer does not go along the entire width
