@@ -27,6 +27,7 @@
   background-color: white;
   color: black;
   text-align: start;
+  padding-top: 40px;
 }
 .portfolio .portfolio_title {
   font-size: 30px;
@@ -61,16 +62,13 @@
     gap: 14px;
   }
   .portfolio .project_boxes .portfolio-project {
-    width: 350px;
+    width: 335px;
   }
   .portfolio .project_boxes .hidden_portfolio {
     display: block;
   }
 }
 @media screen and (min-width: 1024px) {
-  .portfolio {
-    padding: 20px;
-  }
   .portfolio .project_boxes {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr, 1fr;

@@ -1,14 +1,12 @@
 @use "./variable" as *;
 
 .portfolio {
-  // display: block;
   background-color: $primary-color;
   color: $secondary-color;
   text-align: start;
-  // max-width: 300px;
+  padding-top: 40px;
 
   .portfolio_title {
-    // height: 5vh;
     font-size: 30px;
     margin: 30px 0;
   }
@@ -20,7 +18,6 @@
     .portfolio-project {
       .portfolio_box {
         padding: 20px;
-        // width: 100%;
         height: 250px;
         background-color: $secondary-color;
       }
@@ -43,20 +40,20 @@
       }
     }
   }
-  // .project-boxes {
-  //   height: unset;
-  // }
 }
+
+
 
 @media screen and (min-width: 768px) {
   .portfolio {
+
     .project_boxes {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px;
 
       .portfolio-project {
-        width: 350px;
+        width: 335px;
       }
 
       .hidden_portfolio {
@@ -68,7 +65,6 @@
 
 @media screen and (min-width: 1024px) {
   .portfolio {
-    padding: 20px;
 
     .project_boxes {
       grid-template-columns: 1fr 1fr 1fr;
