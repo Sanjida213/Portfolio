@@ -10,6 +10,7 @@
   .portfolio_title {
     font-size: 30px;
     margin: 30px 0;
+    color: $secondary-color;
   }
 
   .project_boxes {
@@ -20,7 +21,7 @@
       .portfolio_box {
         padding: 20px;
         height: 250px;
-        background-color: $secondary-color;
+        background-color: $quaternary-color;
       }
 
       .project_grid {
@@ -31,6 +32,7 @@
 
         .project-number {
           font-size: 30px;
+          color: $secondary-color;
           // font-family: ;
         }
 

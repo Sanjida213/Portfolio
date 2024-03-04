@@ -14,6 +14,7 @@
       justify-content: center;
       padding: 60px 20px 20px 20px;
       gap: 20px;
+      // color: $quaternary-color; // how do i change color of icon 
 
       .icon {
         width: 55px;
@@ -22,6 +23,7 @@
     }
 
     .skills_block {
+      color: $secondary-color;
       display: block;
       padding: 0 40px;
     }

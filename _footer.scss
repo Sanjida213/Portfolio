@@ -1,7 +1,7 @@
 @use "./variable" as *;
 
 footer {
-  background-color: black;
+  background-color: $secondary-color;
   color: white;
   text-align: center;
   width: 100%;
@@ -15,5 +15,3 @@ footer {
     height: 42px;
   }
 }
-
-// footer does not go along the entire width

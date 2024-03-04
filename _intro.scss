@@ -2,23 +2,63 @@
 
 .intro {
   padding: 20px; 
+  margin: 20px;
+  background-color: #f7fafa;
   
+    .intro_name {
+      display: none;
+    }
+
     .job-title {
-    padding: 40px 0;
+    // padding: 40px 0;
+    // padding: 10px 40px 40px 40px;
+    padding-bottom: 50px;
     color: $secondary-color;
     font-size: 45px;
     }
   
-    article {
-      background-color: $primary-color;
-      font-size: 15px;
-      font-family: Arial, Helvetica, sans-serif;
+    .intro_button {
+      text-decoration: none;
+      display: block;
+      justify-content: center;
+      outline: solid $secondary-color;
+      color: $secondary-color;
+      box-shadow: 5px 5px;
+      border-radius: 5px;
+      font-size: 20px;
+      text-align: center;
+      background-color: #BAE8E8;
+      padding: 20px;
+      // margin: 40px 40px;
+
+      &:hover {
+        background-color: darken($primary-color, 30%);
+      }
     }
+    
   }
+
 
 @media screen and (min-width: 768px) {
 
-.intro {
+  .intro {
   padding: 40px 40px;
-}
-}  
+
+    .intro_name {
+      display: flex;
+      justify-content: center;
+      color: rgb(190, 186, 186);
+      font-size: 20px;
+
+    // .job-title {
+    //   // padding: 0px 40px 40px 40px;
+
+    // }
+    }  
+
+    .intro_button {
+      width: 50%;
+      // how do i get this in the center
+    }
+  }
+} 
