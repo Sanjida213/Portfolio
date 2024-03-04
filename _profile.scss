@@ -22,7 +22,8 @@
   .profile {
     display: flex;
     gap: 100px;
-    padding: 40px 40px;
+    padding: 0 40px;
+    margin: unset;
 
     .profile_image {
       width: 450px;
