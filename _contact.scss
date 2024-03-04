@@ -3,18 +3,16 @@
 .contact {
   display: block;
   background-color: $primary-color;
-  height: 40vh;
   color: $secondary-color;
   text-align: start;
-  max-width: 300px;
+  max-width: 100%;
   padding: 20px;
 
   .contact_info {
-    height: 20vh;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .contact_button {
@@ -39,21 +37,20 @@
 @media screen and (min-width: 768px) {
   .contact {
     max-width: unset;
-    justify-content: center;
-    height: unset;
+    // justify-content: center;
+    // height: unset;
     padding: 40px 40px;
 
-
     .contact_info {
-      height: unset;
+      // height: unset;
       font-size: unset;
       font-size: 90px;
       text-align: center;
     }
 
     .contact_button {
-      width: 55%; // fix this
+      width: 30%; // fix this
+      margin-left: 35%;
     }
   }
 }
-
