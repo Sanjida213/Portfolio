@@ -7,14 +7,13 @@
 @media screen and (min-width: 768px) {
   .skills {
     display: unset;
-    padding: 40px 0;
+    padding: 40px 40px; // this isnt working
 
     // how do i make tablet size icon fit on the screen
     .skills_icon {
       display: flex;
       justify-content: center;
       padding: 20px;
-      //  padding-bottom: 60px;
       gap: 20px;
 
       .icon {

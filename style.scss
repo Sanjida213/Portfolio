@@ -5,6 +5,7 @@
 @use "./skills";
 @use "./footer";
 @use "./header";
+@use "./intro";
 
 * {
   margin: 0;
@@ -16,28 +17,16 @@ body {
   font-family: Outfit;
   font-size: 1.5rem;
   background-color: $primary-color;
-  padding: 20px;
-  // max-width: 320px;
 }
 
 
-.job-title {
-  height: 25vh;
-  color: $secondary-color;
-  font-size: 45px;
-}
 
-article {
-  background-color: $primary-color;
-  height: 25vh;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 @media screen and (min-width: 768px) {
   body {
     max-width: unset;
-    padding: 40px 40px;
+    // padding: 40px 40px;
   }
 
   
@@ -65,8 +54,3 @@ article {
   
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    padding-left: 60px;
-  }
-}

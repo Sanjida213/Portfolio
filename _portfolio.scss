@@ -5,6 +5,7 @@
   color: $secondary-color;
   text-align: start;
   padding-top: 40px;
+  padding: 20px;
 
   .portfolio_title {
     font-size: 30px;
@@ -46,7 +47,8 @@
 
 @media screen and (min-width: 768px) {
   .portfolio {
-
+    padding: 40px 40px;
+    
     .project_boxes {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -69,7 +71,7 @@
 
 @media screen and (min-width: 1024px) {
   .portfolio {
-
+    
     .project_boxes {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr, 1fr;
@@ -78,7 +80,7 @@
       .portfolio-project {
         width: 300px;
       }
-      
+
     }
   }
 }
