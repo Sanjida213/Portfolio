@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Sanjida's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,47 +13,27 @@
       <div class="navigation">
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- fix the non semantic tags at the end -->
 
     <div class="intro">
-      <h1 class="intro_name">Hey! I'm Sanjida Begum👋</h1>
+      <h1 class="intro_name">Hey! I'm Sanjida👋</h1>
       <h2 class="job-title">A Junior Software Developer <br> based in the UK.</h2>
-      <button href="#" class="intro_button">Take a look at my work</button>
+      <a href="#main" class="intro_button">Take a look at my work ⤵ </a>
     </div>
-    
+     
 
-    <main>
-      <section class="profile">
-        <div class="profile_body">
-          <h3 class="profile_about">ABOUT</h3>
-          <p class="profile_info">
-            this is where my personal summary will go. Lorem ipsum dolor sit
-            amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          </p>
-        </div>
-
-        <img class="profile_image" src="./sanj.jpg" alt="profile_image" />
-      </section>
+    <main id="main">
 
       <section class="skills">
         <div class="skills_block">
           <h4 class="skills_title">SKILLS</h4>
-          <p class="skills_info">
-            this is where i will have a few sentences about my skills. this is
-            where i will have a few sentences about my skills. this is where i
-            will have a few sentences about my skills.
-          </p>
+          <p class="skills_info"></p>
         </div>
 
         <div class="skills_icon">
@@ -69,7 +49,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h4 class="portfolio_title">PORTFOLIO</h4>
 
         <div class="project_boxes">
@@ -143,7 +123,24 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="profile" id="about">
+        
+        <h3 class="profile_about">ABOUT</h3>
+
+        <div class="profile_body">  
+          <img class="profile_image" src="./sanj.jpg" alt="profile_image" />
+          <p class="profile_info">
+            My first experience to the world of coding was during a simple game of Ludo. As I was rolling the dice, I couldn’t help but wonder about the intricate mechanics of this online game. 
+            How does the computer decide which piece to move? What happens when two pieces land on the same spot?  This curiosity led me down a rabbit hole of programming, where I found all these 
+            fantastic codes that accomplishes so much more than what meets the human eye. <br> <br> This led me to undertake a 12 week intensive training course as a Trainee Software Developer at _nology.
+            This focused on key practices of both front-end and back-end development including, but not limited to, Web Fundamentals, HTML, CSS, JavaScript, Agile and Testing.
+          </p>
+        </div>
+
+      </section>
+
+      
+      <section class="contact" id="contact">
         <h6 class="contact_info">Get in touch</h6>
         <a href="#" class="contact_button">CONTACT</a>
       </section>

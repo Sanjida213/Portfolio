@@ -1,64 +1,72 @@
 @use "./variable" as *;
 
 .intro {
-  padding: 20px; 
+  padding: 20px;
+  padding-bottom: 80px;
   margin: 20px;
   background-color: #f7fafa;
-  
-    .intro_name {
-      display: none;
-    }
 
-    .job-title {
-    // padding: 40px 0;
-    // padding: 10px 40px 40px 40px;
+
+  .intro_name {
+    display: none;
+  }
+
+  .job-title {
     padding-bottom: 50px;
     color: $secondary-color;
     font-size: 45px;
-    }
-  
-    .intro_button {
-      text-decoration: none;
-      display: block;
-      justify-content: center;
-      outline: solid 1px $secondary-color;
-      color: $secondary-color;
-      box-shadow: 5px 4px;
-      border-radius: 5px;
-      font-size: 20px;
-      text-align: center;
-      background-color: #BAE8E8;
-      padding: 20px;
-      // margin: 40px 40px;
-
-      &:hover {
-        background-color: darken($primary-color, 30%);
-      }
-    }
-    
   }
 
+  .intro_button {
+    text-decoration: none;
+    outline: solid 1px $secondary-color;
+    color: $secondary-color;
+    box-shadow: 5px 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #bae8e8;
+    padding: 20px;
+
+    &:hover {
+      background-color: darken($primary-color, 30%);
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
-
   .intro {
-  padding: 40px 40px;
+    padding: 40px 40px;
+    padding-bottom: 150px;
+
 
     .intro_name {
       display: flex;
       justify-content: center;
       color: rgb(190, 186, 186);
       font-size: 20px;
-
-    // .job-title {
-    //   // padding: 0px 40px 40px 40px;
-
-    // }
-    }  
+    }
 
     .intro_button {
-      width: 50%;
-      // how do i get this in the center
+      margin: 0 auto;
+      display: block;
+      max-width: 35%;
     }
   }
-} 
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .intro {
+
+    .job-title {
+      font-size: 60px;
+    }
+
+    .intro_button {
+      font-size: 20px;
+      max-width: 20%;
+    }
+  }
+}  

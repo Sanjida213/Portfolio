@@ -12,14 +12,14 @@
     .skills_icon {
       display: flex;
       justify-content: center;
-      padding: 60px 20px 20px 20px;
+      padding: 60px 20px 50px 20px;
       gap: 20px;
       max-width: 100%;
-      // color: $quaternary-color; // how do i change color of icon 
+      
 
       .icon {
         width: 55px;
-        height: 55px;
+        height: 65px;
       }
     }
 
@@ -30,8 +30,21 @@
     }
 
     .skills_title {
-      font-size: 30px;
+      font-size: 35px;
       padding: 20px 0;
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .skills {
+
+    .skills_icon {
+      
+      .icon {
+        width: 75px;
+        height: 95px;
+      }
+    }
+  }
+}  

@@ -16,25 +16,14 @@
 body {
   font-family: Outfit;
   font-size: 1.5rem;
-  // background-color: $primary-color;
 }
-
-
 
 
 
 @media screen and (min-width: 768px) {
   body {
     max-width: unset;
-    // padding: 40px 40px;
   }
-
-  
-  
-  //     // try use grid area for above or you can add an image to html and hide it on mobile screeen
-  //     // and then put h3 and info into a div container
-
-  
 
   .job-title {
     height: unset;
@@ -42,17 +31,15 @@ body {
     padding: 40px;
     padding-bottom: 60px;
     font-size: 50px;
-    // font-family: Cor;
   }
 
   article {
     max-width: 50%;
     height: unset;
     padding-bottom: 60px;
-  }
-
-  
+  } 
 }
+
 
 @media screen and (min-width: 1024px) {
   body {

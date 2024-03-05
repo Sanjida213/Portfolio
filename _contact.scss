@@ -33,23 +33,20 @@
   }
 }
 
-// fix the media query for this
+
 @media screen and (min-width: 768px) {
   .contact {
     max-width: unset;
-    // justify-content: center;
-    // height: unset;
     padding: 40px 40px;
 
     .contact_info {
-      // height: unset;
       font-size: unset;
       font-size: 90px;
       text-align: center;
     }
 
     .contact_button {
-      width: 30%; // fix this
+      width: 30%; 
       margin-left: 35%;
     }
   }
