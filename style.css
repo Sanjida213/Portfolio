@@ -60,6 +60,9 @@
 .portfolio .project_boxes .hidden_portfolio {
   display: none;
 }
+.portfolio .project_boxes .portfolio-project {
+  padding-bottom: 20px;
+}
 .portfolio .project_boxes .portfolio-project .portfolio_box {
   padding: 20px;
   height: 250px;
@@ -73,6 +76,7 @@
 }
 .portfolio .project_boxes .portfolio-project .project_grid .project-number {
   font-size: 25px;
+  padding-top: 10px;
   color: #272643;
 }
 .portfolio .project_boxes .portfolio-project .project_grid .icon_grid {
@@ -88,9 +92,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
+    margin: 0 auto;
   }
   .portfolio .project_boxes .portfolio-project {
     width: 335px;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
   }
   .portfolio .project_boxes .portfolio-project .project_grid {
     height: 5vh;
@@ -162,6 +170,12 @@
   .contact .contact_button {
     width: 30%;
     margin-left: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact .contact_button {
+    width: 15%;
+    margin-left: 43%;
   }
 }
 .skills {
